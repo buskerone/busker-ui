@@ -1,0 +1,12 @@
+# Node / Package managers
+node_modules/
+.pnpm-store/
+
+# Turbo
+.turbo/
+
+# Storybook
+storybook-static/
+
+# OS
+.DS_Store

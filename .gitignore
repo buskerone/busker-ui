@@ -2,6 +2,9 @@
 node_modules/
 .pnpm-store/
 
+# Build
+dist
+
 # Turbo
 .turbo/
 
@@ -10,3 +13,7 @@ storybook-static/
 
 # OS
 .DS_Store
+
+# Editor
+.vscode/
+.cache/

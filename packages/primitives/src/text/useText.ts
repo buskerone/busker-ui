@@ -1,6 +1,6 @@
 import { useMemo } from "react";
+import { useTheme } from "@/theme/useTheme";
 import type { TextTone, TextVariant } from "@buskerone/tokens";
-import { useTheme } from "../theme/useTheme";
 
 export type TextAlign = "left" | "center" | "right" | "justify";
 

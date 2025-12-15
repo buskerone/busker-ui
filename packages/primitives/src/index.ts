@@ -1,8 +1,8 @@
-export { ThemeProvider } from "./theme/theme-context";
-export type { ThemeProviderProps } from "./theme/theme-context";
+export { ThemeProvider } from "@/theme/theme-context";
+export type { ThemeProviderProps } from "@/theme/theme-context";
 
-export { useTheme } from "./theme/useTheme";
-export { useColorMode } from "./theme/useColorMode";
+export { useTheme } from "@/theme/useTheme";
+export { useColorMode } from "@/theme/useColorMode";
 
-export { useText } from "./text/useText";
-export type { UseTextOptions, ResolvedTextStyle, TextAlign } from "./text/useText";
+export { useText } from "@/text/useText";
+export type { UseTextOptions, ResolvedTextStyle, TextAlign } from "@/text/useText";

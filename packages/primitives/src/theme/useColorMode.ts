@@ -1,4 +1,4 @@
-import { useThemeContext } from "./theme-context";
+import { useThemeContext } from "@/theme/theme-context";
 
 export function useColorMode() {
   const { mode, setMode, toggleMode } = useThemeContext();

@@ -7,6 +7,7 @@ A token-first, cross-platform design system for **React** and **React Native**.
 **busker-ui** is a foundational UI system built to standardize design and UI behavior across web and mobile applications.
 
 The system is designed around:
+
 - **Design tokens** as the single source of truth
 - **Typed, headless primitives** for shared logic
 - **Platform-specific components** for web and native correctness
@@ -31,6 +32,13 @@ This repository is intentionally structured as a monorepo to support multiple pa
 ## Project status
 
 🚧 **Work in progress**
+
+## Packages
+
+- [`@buskerone/tokens`](packages/tokens/README.md)
+- [`@buskerone/primitives`](packages/primitives/README.md)
+- [`@buskerone/ui-web`](packages/ui-web/README.md)
+- [`@buskerone/ui-mobile`](packages/ui-mobile/README.md)
 
 ## License
 

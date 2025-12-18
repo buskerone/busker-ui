@@ -5,4 +5,4 @@ export { useTheme } from "@/theme/useTheme";
 export { useColorMode } from "@/theme/useColorMode";
 
 export { useText } from "@/text/useText";
-export type { UseTextOptions, ResolvedTextStyle, TextAlign } from "@/text/useText";
+export type { UseTextOptions, ResolvedTextStyle } from "@/text/useText";

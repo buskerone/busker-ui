@@ -49,9 +49,9 @@ export type TextTone = keyof typeof color.light.text;
 
 export const typography = {
   textVariant: {
-    "body.sm": { fontSize: 14, lineHeight: 20, fontWeight: 400 as const },
-    "body.md": { fontSize: 16, lineHeight: 24, fontWeight: 400 as const },
-    "heading.h1": { fontSize: 32, lineHeight: 40, fontWeight: 700 as const },
+    "body.sm": { fontSize: 14, fontWeight: 400 as const },
+    "body.md": { fontSize: 16, fontWeight: 400 as const },
+    "heading.h1": { fontSize: 32, fontWeight: 700 as const },
   },
 } as const;
 

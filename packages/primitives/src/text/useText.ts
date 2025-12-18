@@ -1,33 +1,20 @@
 import { useMemo } from "react";
-import { useTheme } from "@/theme/useTheme";
+import { useTheme } from "../theme/useTheme";
 import type { TextTone, TextVariant } from "@buskerone/tokens";
-
-export type TextAlign = "left" | "center" | "right" | "justify";
 
 export type UseTextOptions = {
   variant?: TextVariant;
   tone?: TextTone;
-  align?: TextAlign;
-
-  /**
-   * - In web components we’ll map to `text-overflow: ellipsis`.
-   * - In RN components we’ll map to `numberOfLines={1}`.
-   */
-  truncate?: boolean;
 };
 
 export type ResolvedTextStyle = Readonly<{
   fontSize: number;
-  lineHeight: number;
-  fontWeight: number;
-  color: string;
-  textAlign?: TextAlign;
 }>;
 
 export function useText(options: UseTextOptions = {}) {
   const theme = useTheme();
 
-  const { variant = "body.md", tone = "default", align } = options;
+  const { variant = "body.md", tone = "default" } = options;
 
   const style = useMemo<ResolvedTextStyle>(() => {
     const v = theme.typography.textVariant[variant];
@@ -35,12 +22,10 @@ export function useText(options: UseTextOptions = {}) {
 
     return {
       fontSize: v.fontSize,
-      lineHeight: v.lineHeight,
       fontWeight: v.fontWeight,
       color: c,
-      ...(align ? { textAlign: align } : null),
     };
-  }, [theme, variant, tone, align]);
+  }, [theme, variant, tone]);
 
   return { style };
 }

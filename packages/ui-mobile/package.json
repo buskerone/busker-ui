@@ -1,0 +1,40 @@
+{
+  "name": "@buskerone/ui-mobile",
+  "version": "0.0.0",
+  "private": false,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "react-native": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "react-native": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "19.2.3",
+    "react-native": "0.83.0"
+  },
+  "dependencies": {
+    "@buskerone/tokens": "workspace:*",
+    "@buskerone/primitives": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3"
+  }
+}

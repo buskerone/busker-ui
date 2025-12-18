@@ -1,0 +1,20 @@
+:root {
+  /* text */
+  --color-text-default: 11 15 20; /* #0B0F14 */
+  --color-text-muted: 75 85 99; /* #4B5563 */
+  --color-text-brand: 79 70 229; /* #4F46E5 */
+  --color-text-success: 21 128 61; /* #15803D */
+
+  /* bg - white for light mode */
+  --color-bg-canvas: 255 255 255; /* #FFFFFF */
+}
+
+[data-theme="dark"] {
+  --color-text-default: 232 238 245; /* #E8EEF5 */
+  --color-text-muted: 182 194 209; /* #B6C2D1 */
+  --color-text-brand: 165 180 252; /* #A5B4FC */
+  --color-text-success: 74 222 128; /* #4ADE80 */
+
+  /* bg - black for dark mode */
+  --color-bg-canvas: 0 0 0; /* #000000 */
+}

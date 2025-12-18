@@ -1,0 +1,21 @@
+@import "@buskerone/ui-web/styles/tokens.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* Simple black/white theme utilities for busker-ui components */
+.bg-canvas {
+  background-color: rgb(var(--color-bg-canvas));
+}
+
+.bg-surface {
+  background-color: rgb(var(--color-bg-canvas));
+}
+
+.border-theme {
+  border-color: rgb(0 0 0 / 0.2);
+}
+
+[data-theme="dark"] .border-theme {
+  border-color: rgb(255 255 255 / 0.2);
+}

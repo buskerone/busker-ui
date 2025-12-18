@@ -22,6 +22,14 @@ export default [
   // Disables ESLint rules that conflict with Prettier
   prettierConfig,
 
+  // Global rule tweaks
+  {
+    rules: {
+      // Allow CommonJS-style require() where needed (e.g. Metro, config, scripts, asset imports)
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
+
   // Enables the `prettier/prettier` rule
   {
     plugins: {
@@ -35,6 +43,16 @@ export default [
   // Configuration for CommonJS files (.cjs)
   {
     files: ["**/*.cjs"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+
+  // Node-style globals for .js tooling files (Metro, scripts, configs, etc.)
+  {
+    files: ["**/*.js"],
     languageOptions: {
       globals: {
         ...globals.node,

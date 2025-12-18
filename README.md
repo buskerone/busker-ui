@@ -40,6 +40,11 @@ This repository is intentionally structured as a monorepo to support multiple pa
 - [`@buskerone/ui-web`](packages/ui-web/README.md)
 - [`@buskerone/ui-mobile`](packages/ui-mobile/README.md)
 
+## App examples
+
+- [`apps/web`](apps/web/README.md)
+- [`apps/mobile`](apps/mobile/README.md)
+
 ## License
 
 MIT

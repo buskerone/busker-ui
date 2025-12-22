@@ -9,6 +9,8 @@ export type UseTextOptions = {
 
 export type ResolvedTextStyle = Readonly<{
   fontSize: number;
+  fontWeight: 400 | 500 | 600 | 700;
+  color: string;
 }>;
 
 export function useText(options: UseTextOptions = {}) {

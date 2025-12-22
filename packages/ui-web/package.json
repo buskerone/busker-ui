@@ -12,9 +12,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./styles/tokens.css": {
-      "style": "./src/styles/tokens.css"
     }
   },
   "files": [

@@ -1,5 +1,3 @@
-// README for @buskerone/ui-web
-
 # @buskerone/ui-web
 
 Web UI components for the **busker-ui** design system, built on top of primitives and tokens.

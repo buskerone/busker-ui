@@ -1,4 +1,4 @@
-@import "@buskerone/ui-web/styles/tokens.css";
+@import "@buskerone/tokens/styles/tokens.css";
 @import "tailwindcss";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

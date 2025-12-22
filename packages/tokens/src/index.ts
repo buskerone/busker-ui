@@ -57,18 +57,7 @@ export const typography = {
 
 export type TextVariant = keyof typeof typography.textVariant;
 
-// Type representing the structure of a color theme (shared by light and dark)
-export type ThemeColor = {
-  readonly text: {
-    readonly default: string;
-    readonly muted: string;
-    readonly brand: string;
-    readonly success: string;
-  };
-  readonly bg: {
-    readonly canvas: string;
-  };
-};
+export type ThemeColor = (typeof color)[ColorMode];
 
 export type Theme = {
   mode: ColorMode;

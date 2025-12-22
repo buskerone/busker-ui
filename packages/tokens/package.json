@@ -12,18 +12,21 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./styles/tokens.css": "./dist/styles/tokens.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsx scripts/generate-tokens-css.ts",
+    "tokens:css": "tsx scripts/generate-tokens-css.ts",
     "dev": "tsup --watch",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
     "tsup": "8.5.1",
+    "tsx": "4.21.0",
     "typescript": "5.9.3"
   }
 }

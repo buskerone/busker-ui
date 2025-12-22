@@ -33,6 +33,7 @@ export function Text<T extends TextAs = "span">({
   align,
   className,
   style,
+  children,
   ...rest
 }: TextProps<T>) {
   const Comp = (as ?? "span") as React.ElementType;
@@ -48,6 +49,8 @@ export function Text<T extends TextAs = "span">({
         ...(align ? { textAlign: align } : null),
         ...(style as React.CSSProperties),
       }}
-    />
+    >
+      {children}
+    </Comp>
   );
 }
